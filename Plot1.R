@@ -1,3 +1,5 @@
+#Creating a barplot of total PM2.5 emission in 4 different years in US
+NEI<-readRDS("summarySCC_PM25.rds")
 byyear<-split(NEI,NEI$year)
 mylist<-c()
 for(year in byyear){
